@@ -67,25 +67,30 @@ section{
 }
 
 .articleContext{
+  display: inline-block;
   width:95%;
   height: auto;
-	background-color: #fff;
-  margin-left: 0 5%;
+  color: #ccc;
+  background: peru;
+  margin: 0 2%;
   border-radius: 2%;
+  padding: 1%;
+  line-height: 2em;
+  font-family: sans-serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, ;
 }
 .articleForm{
 	width:95%;
   height: auto;
-  margin-left:0% 5%;
+  margin:0% 2%;
   border-radius: 2%;
 }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],input[type=password] {
     width: 100%; /* Full width */
-    padding: 12px; /* Some padding */  
+    padding: 2em; /* Some padding */  
     border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
+    border-radius:1%; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
@@ -109,22 +114,25 @@ input[type=submit]:hover {
 
 /* Add a background color and some padding around the form */
 #container {
+  width: 100%;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
 }
-
+.content{
+  width: 100%;
+}
 /* register css code here */
 
 * {box-sizing: border-box}
 
-/* Add padding to containers */
+/* Add padding to containers for register code */
 #container {
-	padding: 1%;;
+	padding: 2%;;
   background-color: #fff;
-  width: 50%;
-  display: flex;
-  margin-left: 25%;
+  width: 100%;
+  display: block;
+  margin-left: 2%;
 }
 
 /* Full-width input fields */
@@ -132,9 +140,16 @@ input[type=text], input[type=password] {
 
   padding: 15px;
   margin: 5px 0 22px 0;
-  display: inline-block;
+  display: block;
   border: none;
   background: #f1f1f1;
+}
+#containerform {
+	padding: 2%;;
+  background-color: #fff;
+  width: 100%;
+  display: block;
+  margin-left: 24%;
 }
 
 input[type=text]:focus, input[type=password]:focus {
@@ -144,8 +159,10 @@ input[type=text]:focus, input[type=password]:focus {
 
 /* Overwrite default styles of hr */
 hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+  border: 1px solid peru;
+  margin-top: 75px;
+ 
+  top: 50px;
 }
 
 /* Set a style for the submit/register button */
@@ -172,4 +189,18 @@ a {
 .signin {
   background-color: #f1f1f1;
   text-align: center;
+}
+
+footer{
+  background:peru;
+  width: 100%;
+  height:80px;
+  color:#fff;
+  margin-top: 2%;
+  margin-bottom: 0;
+}
+footer p{
+  margin-top: 3%;
+  margin-left: 36%;
+  font-family: cursive;
 }

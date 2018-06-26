@@ -1,0 +1,98 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(images/bglogo.jpeg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section{
+    border:1px solid blue;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid peru;
+}
+header .header-brand{
+    font-family:cursive;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 10px;
+    color: peru;
+    padding: 20px 0;
+}
+
+nav a{
+    text-decoration: none;
+}
+header nav ul{
+    display: block;
+    margin-top: 2%;
+    width: fit-content;
+}
+header nav ul li{
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0 0.8em;
+}
+header nav ul li a{
+    font-family: cursive;
+    font-size: 1em;
+    color: peru;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.clear{
+    clear: both;
+}
+
+main{
+    margin-top: 100px;
+}
+
+.div1{
+    width: 390x;
+    height: 200px;
+    border:1px solid #fff;
+    color: #ffffff;
+    background: peru;
+    padding: 0 2px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+.div1 p{
+    font-family: cursive;
+    font-size: 16px;
+    text-align: center;
+}
+
+footer p{
+    width: 100%;
+    height: 60px;
+    background-color: peru;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+#foot{
+    margin-top: 5px;
+}
+button{
+    background-color: peru;
+    border: none;
+    color: #fff;
+}

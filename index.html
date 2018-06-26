@@ -16,21 +16,23 @@
 
 				<ul>
 					<li><a href="index.html">Home</a></li>
-        			<li><a href="register.html">Sign-Up</a> / <a href="signin.html">Sign-in</a></li>
+        			<li><a href="index.html">Sign-Up</a> / <a href="signin.html">Sign-in</a></li>
         			<li><a href="about.html">About</a></li>
 				</ul>
 			</nav>
 		</header>
-
-		<section>
-			<article class="articleContext">
-					<h3 id="heading">Join A Ride</h3>
+		<hr >
+		<section class="content">
+				
+			<div class="articleContext">
+					<h2>Join A Ride</h2>
 					<p id="ptext">
+							
 					 How it Works Tip information. Is an Application that create an avenue people of the same neighbourhood to offer rides.
 					Available rides that match your route will be displayed and you can join any of the rides. [If none matches your route, you can choose to get notified when there’s a ride for your route]
 					To ensure the platform is safe, you need to sign in using your Facebook and LinkedIn accounts as well as verify your phone number.
-					The cost of the ride will be calculated. The first 30 rides joined on the platform are free (Paid for by Jekalo) . This means if you join a ride asap, your ride might be free.
-					[The amount you pay on JEKALO is about the same price as using a commercial bus and cheaper than a taxi.]
+					The cost of the ride will be calculated. The first 30 rides joined on the platform are free (Paid for by ANDELA) . This means if you join a ride asap, your ride might be free.
+					[The amount you pay on ANDELA is about the same price as using a commercial bus and cheaper than a taxi.]
 					You will get notified once the ride owner has confirmed your ride request.
 					</p>
 
@@ -44,34 +46,37 @@
 						As a ride owner, you earn points that can be used to redeem cash, fuel vouchers, airtime vouchers, mobile data and more.
 					</p>-->
 				
-			</article>
-			<article class="articleForm">
+			</div>
+			<div class="articleForm">
 		<div id="container">
 
 				
-			  <form action="#" method="#">
+			  <form action="register.html" method="#">
 				<h2>Sign Up Here:</h2>
 			    <label for="username">User Name</label>
-			    <input type="text" id="uname" name="username" placeholder="User Name...">
+			    <input type="text" id="uname" name="username" placeholder="User Name..." required>
 
 			    <label for="email">Email</label>
-			    <input type="text" id="mail" name="email" placeholder="Email Adress..">
+				<input type="email" id="mail" name="email" placeholder="Email Adress.." required>
+				
+				<label for="DoP">Driver / Passenger</label>
+			    <input type="text" id="DP" name="name" required>
 
 			    <label for="password">Password</label>
-			    <input type="password" id="pass" name="password" placeholder="Password here..">
+			    <input type="password" id="pass" name="password" placeholder="Password here.." required>
 
 			    <label for="pass">Confirm Password</label>
-			    <input type="password" id="cpass" name="cpassword" placeholder="Confirm Password..">
+			    <input type="password" id="cpass" name="cpassword" placeholder="Confirm Password.." required>
 
-			    <a href="welcomepage.html"><input type="submit" value="Sign-Up"></a> &nbsp; <a href="signin.html"><input type="submit" value="Sign-In"></a>
+			    <a href="register.html"><input type="submit" value="Sign-Up"></a> &nbsp; <a href="signin.html"><input type="submit" value="Sign-In"></a>
 
 			  </form>
 			</div>
-			</article>
+		</div>
 		</section>
 		
 
-		<footer>&copy;2018| Andela Bootcamp.</footer>
+		<footer><p>&copy;2018| Andela Bootcamp | Designed by Hafeez</p></footer>
 	</div>
 
 </body>
