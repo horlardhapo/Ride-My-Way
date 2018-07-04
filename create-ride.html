@@ -28,25 +28,27 @@
 		<div class="clear"></div>
     </div>
 
-		<div class="content">
+    <div class="content">
 
-			<div class="signup-login about">
-				<center><h4>ABOUT THE APP</h4></center>
-				<p>Ride My Way is a product assignment given to Andela paticipants in Kampala cycle 9</p>
-   				<p>This assignment is meant to help us practice what we were reading in home study tests given at an earlier stage of application. </p>
-				<br>
-				<p>It is an application where you can sign in and start riding with your friends</p>
-    			<p>During the ride you can be a rider or a driver. The choice is yours</p>
-    			<p>When you are a driver, you can <a href="create-ride.html">create</a> a ride and friend can join you.</p>
-    			<p>When you are a rider, you can <a href="ride-offer-list.html">request to join </a> a ride from a list of ride offers created by your friends.</p><br>
-    			<center><a href="signup.html"><button id="about">Signup to get started</button></a></center></br>
-			</div>
-		</div>
-   
-    
+        <div class="create-ride signup-login">
+            <center><h4>CREATE RIDE OFFER</h4></center>
+            <form action="ride-offer-list.html">
+                <label for="date">Date:</label>
+                <input type="date" placeholder="mm/dd/yyyy" required>
+                <label for="time">Time:</label>
+                <input type="time" placeholder="12:00:00 AM" required> <br><br>
+                <label for="source">Create Source:</label><br>
+                <input type="text" placeholder="Source Name" required><br><br>
+                <label for="dest">Create Destination:</label><br>
+                <input type="text" placeholder="Destination Name"><br><br>
+                <label for="price">Price your Ride(UGX):</label><br>
+                <input type="text" placeholder="5000.00" required><br><br>
+                <input type="submit" value="Create">
+            </form>
+        </div>
+    </div>
 	<div class="foot">
 		<p id="foots">&copy; 2018 Andela Bootcamp | Design by Hafeez </p>
     </div>
-    
 </body>
 </html>

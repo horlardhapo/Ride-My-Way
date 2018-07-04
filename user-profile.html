@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Ride-My-Way | User-Profile</title>
+	<link rel="stylesheet" href="css/main-body.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class="menu">
+			<a href="index.html"><div class="app-profile">
+				<img src="images/logo.png" alt="App_Logo" id="app-logo"/>
+				<h2>Ride-My-Way</h2>
+			</div></a>
+	<div class="menu-list">
+		<ul>
+			<li><a href="user-profile.html">Home</a></li>
+			<li><a href="ride-offer-list.html">Ride</a></li>
+			<li><a href="request-list.html">Drive</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">LogOut</a></li>
+		</ul>
+	</div>
+		<div class="clear"></div>
+    </div>
+    
+    <div class="user-profile">
+            <strong>Welcome Small London</strong>
+            <div id="hafeez">
+                <img src="images/afeez.png" alt="">
+
+                <div class="notification">
+                    <span><i class="fa fa-bell" onclick="notification()"></i> <i class="fa fa-circle" onclick="notification()"></i></span>
+                    
+                        <div id="notification">
+                            <div id="notification-head">
+                                <h4>Notifications</h4>
+                            </div>
+
+                            <div class="notification-msg">
+                                <span class="rejected-msg"><i class="fa fa-close"></i>Dear Monsuro Raji rejected your ride RF0024 </span>
+                            </div>
+
+                            <div class="notification-msg">
+                                <span class="accepted-msg"><i class="fa fa-close"></i>Dear Idrees Shittu accepted your ride RF0024 </span>
+                            </div>
+
+                            <div class="notification-msg">
+                                <span class="accepted-msg"><i class="fa fa-close"></i>Dear Roqeebah Ishola accepted your ride RF0024 </span>
+                            </div>
+
+                            <div class="notification-msg">
+                                <span class="rejected-msg"><i class="fa fa-close"></i>Dear Saheed Odewole rejected your ride RF0024 </span>
+                            </div>
+
+                            <div class="notification-msg">
+                                <span class="accepted-msg"><i class="fa fa-close"></i>Dear Hafeez Durodola accepted your ride RF0024 </span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="home-content">
+
+        <div class="rides" id="rides">
+
+                <div id="ride-header">
+                    <div class="all-rides" onclick="change_rides_view('all-rides','given','taken')">ALL RIDES (5)</div>
+
+                    <div class="given" onclick="change_rides_view('all-rides','given','taken')">RIDES TAKEN (2)</div>
+
+                    <div class="taken" onclick="change_rides_view('all-rides','given','taken')">RIDES GIVEN (3)</div>
+                </div>
+
+                <table id="all-rides">
+                    <tr>
+                        <th></th>
+                        <th>DATE</th>
+                        <th>REF NO</th>
+                        <th>ACTION</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>22/02/2018</td>
+                        <td>RF0001</td>
+                        <td><a href="show-ride.html"><button id="cancel">View</button></a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>12/07/2018</td>
+                        <td>RF0005</td>
+                        <td><a href="show-ride.html"><button id="request">View</button></a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>23/08/2018</td>
+                        <td>RF0023</td>
+                        <td><a href="show-ride.html"><button id="cancel">View</button></a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>18/07/2018</td>
+                        <td>RF0115</td>
+                        <td><a href="show-ride.html"><button id="request">View</button></a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>9/07/2018</td>
+                        <td>RF0005</td>
+                        <td><a href="show-ride.html"><button id="cancel">View</button></a></td>
+                    </tr>
+                </table>
+
+                <table id="given">
+
+                        <tr>
+                            <th></th>
+                            <th>DATE</th>
+                            <th>REF NO</th>
+                            <th>ACTION</th>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>12/07/2018</td>
+                            <td>RF0010</td>
+                            <td><a href="show-ride.html"><button id="request">View</button></a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>23/06/2018</td>
+                            <td>RF0015</td>
+                            <td><a href="show-ride.html"><button id="request">View</button></a></td>
+                        </tr>
+                </table>
+
+                <table id="taken">
+                    <tr>
+                        <th></th>
+                        <th>DATE</th>
+                        <th>REF NO</th>
+                        <th>ACTION</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>22/02/2018</td>
+                        <td>RF0001</td>
+                        <td><a href="show-ride.html"><button id="cancel">View</button></a></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>2/04/2018</td>
+                        <td>RF0008</td>
+                        <td><a href="show-ride.html"><button id="cancel">View</button></a></td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>14/06/2018</td>
+                        <td>RF0034</td>
+                        <td><a href="show-ride.html"><button id="cancel">View</button></a></td>
+                     </tr>
+                </table>
+
+                <div class="table-footer">
+                    <button id="prev"> << Previous</button> &nbsp; <button id="next">Next >></button>
+                </div>
+        </div>
+
+        <div class="friends">
+
+            <div id="friend-header">
+
+                <div id="hovered" onclick="friends()">FRIENDS</div>
+
+                <div id="accounts" onclick="accounts()">ACCOUNTS</div>
+            </div>
+
+            <!-- User friends area begins -->
+
+            <div id="friend-content">
+                <div class="friend">
+                    <img src="images/afeez.png" id="friend-hafeez" alt="friend">
+                    <label for="friend">Olatokunbo Williams</label>
+                </div>
+                <div class="friend">
+                    <img src="images/afeez.png" id="friend-hafeez" alt="friend">
+                    <label for="friend">Olatokunbo Williams</label>
+                 </div>
+                 <div class="friend">
+                    <img src="images/afeez.png" id="friend-hafeez" alt="friend">
+                    <label for="friend">Olatokunbo Williams</label>
+                 </div>
+                <div class="friend">
+                    <img src="images/afeez.png" id="friend-hafeez" alt="friend">
+                     <label for="friend">Olatokunbo Williams</label>
+                </div>
+                <div class="friend">
+                    <img src="images/afeez.png" id="friend-hafeez" alt="friend">
+                    <label for="friend">Olatokunbo Williams</label>
+                 </div>
+            </div>
+
+            <!--account area begins -->
+
+            <div id="accounts-content">
+                <div class="friend">
+                    <img src="images/friend.jpg" alt="account-name">
+                    <label for="account">Habeebah S<i class="fa fa-user-plus"></i></label>
+                </div>
+                <div class="friend">
+                    <img src="images/friend.jpg" alt="account-name">
+                    <label for="account">Halimah A<i class="fa fa-user-times"></i></label>
+                </div>
+                <div class="friend">
+                    <img src="images/friend.jpg" alt="account-name">
+                    <label for="account">Fareeddah G<i class="fa fa-user-plus"></i></label>
+                 </div>
+                <div class="friend">
+                    <img src="images/friend.jpg" alt="account-name">
+                    <label for="account">Muheebah T<i class="fa fa-user-plus"></i></label>
+                 </div>
+                 <div class="friend">
+                    <img src="images/friend.jpg" alt="account-name">
+                    <label for="account">Roqeebah K<i class="fa fa-user-plus"></i></label>
+                </div>
+                <div class="friend">
+                    <img src="images/friend.jpg" alt="account-name">
+                    <label for="account">Sekinah H<i class="fa fa-user-times"></i></label>
+                </div>
+            </div>
+            <div class="bottom-gif">
+                <img src="images/car.gif" alt="moving-car">
+            </div>
+
+        </div>
+
+
+    </div>
+
+	
+
+	<div class="myfooter">
+		<p id="foots">&copy; 2018 Andela Bootcamp | Design by Hafeez </p>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
